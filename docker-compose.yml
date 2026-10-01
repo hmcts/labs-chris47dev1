@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  chris47dev1:
+    build:
+      context: .
+      args:
+        - http_proxy
+        - https_proxy
+        - no_proxy
+    image: hmctssbox.azurecr.io.azurecr.io/labs/chris47dev1
+    ports:
+      - $SERVER_PORT:$SERVER_PORT
